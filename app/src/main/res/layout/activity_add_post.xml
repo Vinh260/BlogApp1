@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        app:title=" "
+        android:elevation="1dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:onClick="cancelPost"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/colorLightGrey" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="New Post"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="6dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:id="@+id/imgAddPost"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:minHeight="48dp"
+                android:onClick="changePhoto"
+                android:text="Change Photo"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtDescAddPost"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/txt_background"
+                android:gravity="left"
+                android:hint="@string/app_name"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnAddPost"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_round"
+                android:text="Post"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="17dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

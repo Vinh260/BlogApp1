@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgCommentProfile"
+                android:layout_width="61dp"
+                android:layout_height="56dp"
+                android:src="@color/colorLightGrey" />
+
+            <LinearLayout
+                android:layout_width="236dp"
+                android:layout_height="59dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="6dp">
+
+                <TextView
+                    android:id="@+id/txtCommentName"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:text="Habib Mhamadi"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCommentDate"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:text="Jun 15"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="13sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="63dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="skldfjlksdjflsdjf"
+            android:textColor="@color/colorGrey"
+            android:textSize="16sp" />
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:background="#cccccc"
+            android:layout_height="1px"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

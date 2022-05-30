@@ -79,9 +79,8 @@ public class OnBoardActivity extends AppCompatActivity {
         @Override
         public void onPageSelected(int position) {
             addDots(position);
-            //ok now we need to change the text of Next button to Finish if we reached page 3
-            //and hide Skip button if we are not in page 1
-
+           //next slide
+            //skip next 3 slide
             if(position==0){
                 btnLeft.setVisibility(View.VISIBLE);
                 btnLeft.setEnabled(true);
@@ -95,7 +94,7 @@ public class OnBoardActivity extends AppCompatActivity {
             else{
                 btnLeft.setVisibility(View.GONE);
                 btnLeft.setEnabled(false);
-                btnRight.setText("Finish");
+                btnRight.setText("Login");
             }
         }
 

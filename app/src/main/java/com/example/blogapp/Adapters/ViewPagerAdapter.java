@@ -22,21 +22,21 @@ public class ViewPagerAdapter extends PagerAdapter {
     }
 
     private int images[] ={
-            R.drawable.p1,
-            R.drawable.p2,
-            R.drawable.p3,
+            R.drawable.img_1,
+            R.drawable.img_2,
+            R.drawable.img_3,
     };
 
     private String titles[] ={
-            "Learn",
-            "Create",
-            "Enjoy"
+            "Enjoy",
+            "Spreading",
+            "Share"
     };
 
     private String descs[] ={
-            "lorem  ipsum dolor contraint spaces dolor ipsum loremters termainal lorem ispsum contanirnts.",
-            "lorem  ipsum dolor contraint spaces dolor ipsum loremters termainal lorem ispsum contanirnts.",
-            "lorem  ipsum dolor contraint spaces dolor ipsum loremters termainal lorem ispsum contanirnts."
+            "Bring lots of interesting food pictures and rate people about it",
+            "A place where people have fun eating and connecting with each other",
+            "Let more people know about the dish and will be interested to experience it"
     };
 
     @Override

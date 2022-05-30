@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:text="Login "
+        android:textColor="@color/colorGrey"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/txtLayoutEmailSignIn"
+        android:layout_marginBottom="6dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmailSignIn"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/txtLayoutPasswordSignIn"
+        android:layout_marginBottom="30dp"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPasswordSignIn"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btn_round"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="17dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dont have account?"
+            android:layout_marginRight="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/txtSignUp"
+            android:layout_marginRight="6dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
